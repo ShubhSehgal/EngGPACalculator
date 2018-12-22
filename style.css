@@ -1,0 +1,18 @@
+body {
+  color: black;
+  background-color: white;
+}
+
+.sem1 {
+  display: inline-block;
+}
+
+.courseCntr {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+}
+
+.calcBtn {
+  height: 50px;
+}

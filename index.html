@@ -1,0 +1,96 @@
+<html>
+
+  <head>
+   <title> GPA Calculator </title>
+   <link rel="stylesheet" type="text/css" href="style.css">
+   <script src="main.js"></script>
+  </head>
+
+  <body>
+    <h1> First Year Engineering GPA Calculator </h1>
+    <p>  This is just a quick method of calculating the GPA for students in first year engineering at McMaster. </p>
+
+    <div class="main">
+
+      <div class="sem1">
+
+        <h3> Semester 1 </h3>
+        <div class="courseCntr">
+          <p> CHEM 1E03 </p> GPA: <input type="number" min="0" max="12" id="chem" value="0"> </input>
+        </div>
+
+        <div class="courseCntr">
+        <p> PHYSICS 1D03 </p> GPA: <input type="number" min="0" max="12" id="physics" value="0"> </input>
+        </div>
+
+        <div class="courseCntr">
+        <p> MATH 1ZA3 </p> GPA: <input type="number" min="0" max="12" id="math1ZA3" value="0"> </input>
+        </div>
+
+        <div class="courseCntr">
+        <p> ENG COMPUTATION 1D04 </p> GPA: <input type="number" min="0" max="12" id="computation" value="0"> </input>
+        </div>
+
+        <div class="courseCntr">
+        <p> ENG PROF&PRAC 1P03 </p> GPA: <input type="number" min="0" max="12" id="engProf" value="0"> </input>
+        </div>
+
+        <div class="courseCntr">
+        <p> Elective </p> GPA: <input type="number" min="0" max="12" id="elec1" value="0"> </input> Units: <input type="number" min="0" id="elec1Units" value="0"> </input>
+        </div>
+
+        <button onclick="calcSem1()" class="calcBtn"> Calculate Sem 1 GPA </button>
+
+        <div id="sem1GPA">
+        <p> Your Semester 1 GPA is: </p>
+        </div>
+
+      </div>
+
+      <div class="sem2">
+
+        <h3> Semester 2 </h3>
+
+        <div class="courseCntr">
+        <p> MATH 1ZB3 </p> <input type="number" min="0" max="12" id="math1ZB3" value="0"> </input>
+        </div>
+
+        <div class="courseCntr">
+        <p> MATH 1ZC3 </p> <input type="number" min="0" max="12" id="math1ZC3" value="0"> </input>
+        </div>
+
+        <div class="courseCntr">
+        <p> MATLS 1M03 </p> <input type="number" min="0" max="12" id="matls1M03" value="0"> </input>
+        </div>
+
+        <div class="courseCntr">
+        <p> PHYSICS 1E03 </p> <input type="number" min="0" max="12" id="physics2" value="0"> </input>
+        </div>
+
+        <div class="courseCntr">
+        <p> ENGINEER 1C03 </p> <input type="number" min="0" max="12" id="eng1C03" value="0"> </input>
+        </div>
+
+        <div class="courseCntr">
+        <p> Elective </p> <input type="number" min="0" max="12" id="elec2" value="0"> </input> Units: <input type="number" min="0" id="elec2Units" value="0"> </input>
+        </div>
+
+        <button class="calcBtn" onclick="calcSem2()"> Calculate Sem 2 GPA </button>
+
+      </div>
+
+      <div id="sem2GPA">
+      <p> Your Semester 2 GPA is: </p>
+      </div>
+
+      <button class="calcBtn" onclick="calcTotalGPA()"> Calculate Overall GPA </button>
+
+      <div id="overallGPA">
+      <p> Your overall GPA is: </p>
+      </div>
+
+  </div>
+
+
+  </body>
+</html>
