@@ -9,7 +9,7 @@ function calcSem1() {
 
   totalUnits = 3*4 + 4 + elec1Units;
   var gpaTotal = chemGPA*3 + physicsGPA*3 + math1ZA3GPA*3 + computationGPA*4 + engProfGPA*3 + elec1GPA * elec1Units;
-  var sem1GPA =  gpaTotal/totalUnits;
+  var sem1GPA =  Math.round((gpaTotal/totalUnits) * 100) / 100;
 
   sem1GPA = sem1GPA.toString();
 
@@ -33,7 +33,7 @@ function calcSem2() {
 
   totalUnits = 3*5 + elec2Units;
   var gpaTotal = math1ZB3GPA*3 + math1ZC3GPA*3 + matls1M03GPA*3 + physics2GPA*3 + eng1C03GPA*3 + elec2GPA*elec2Units;
-  var sem2GPA = gpaTotal/totalUnits;
+  var sem2GPA = Math.round((gpaTotal/totalUnits) * 100) / 100;
 
   sem2GPA = sem2GPA.toString();
 
@@ -66,7 +66,7 @@ function calcTotalGPA() {
   var totalUnits = (3*9) + 4 + elec1Units + elec2Units;
   var gpaTotal = chemGPA*3 + physicsGPA*3 + math1ZA3GPA*3 + computationGPA*4 + engProfGPA*3 + elec1GPA * elec1Units + math1ZB3GPA*3 + math1ZC3GPA*3 + matls1M03GPA*3 + physics2GPA*3 + eng1C03GPA*3 + elec2GPA*elec2Units;
 
-  var finalGPA = gpaTotal/totalUnits;
+  var finalGPA = Math.round((gpaTotal/totalUnits) * 100) / 100;
 
   finalGPA = finalGPA.toString();
 

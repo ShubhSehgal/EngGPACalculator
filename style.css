@@ -1,18 +1,64 @@
 body {
   color: black;
-  background-color: white;
+  background-color: whitesmoke;
+  text-align: center;
 }
 
 .sem1 {
-  display: inline-block;
+  margin-top: 50px;
 }
 
+.sem2 {
+  margin-top: 50px;
+}
+
+#sem1GPA {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+  display: inline-block;
+  margin: 10px;
+}
+
+#sem2GPA {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+  display: inline-block;
+  margin: 10px;
+}
+
+#overallGPA {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+  display: inline-block;
+  margin: 10px;
+}
 .courseCntr {
   display: inline-block;
   margin: 10px;
   padding: 10px;
+  background-color: white;
+  border-radius: 10px;
 }
 
 .calcBtn {
   height: 50px;
+  border-radius: 50px;
+  background-color: #C733FF;
+  color: white;
+  padding: 15px;
+  transition: 0.5s;
+  border: 1px solid #C733FF;
+}
+
+.calcBtn:hover {
+  background-color: #A107DC;
+  box-shadow: -1px 1px 10px grey;
+  border: 1px solid #A107DC;
+}
+
+.gpaIntroText {
+  display: inline-block;
 }
